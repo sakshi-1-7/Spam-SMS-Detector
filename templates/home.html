@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    
+    <title>Spam SMS Detector</title>
+  </head>
+  <body>
+        
+    
+    <div class="container">
+      <br><br><br><br><br>
+      <h1 class="display-1 card-header" align="center" style="color:#2196F3;">Spam SMS Detector  </h1>
+      <p class="lead" align="center"> Paste your SMS below to check whether it is spam or  not.  </p>
+
+      <div class="panel-group">
+        
+        <div class="panel panel-primary">
+          <div class="panel-heading" align="center">Enter Your SMS below</div>
+          <br>
+          <form action="{{ url_for('predict')}}" method="POST" align="center">
+            
+            <textarea name="message" rows="4" cols="50" placeholder="Hey Folks, check your messages here !" required="required"></textarea>
+            <br/>
+        
+            <input type="submit" class="btn btn-danger" value="Let's Check" >
+            <br>
+            
+          </form>
+          <br>
+        </div>
+       </div>
+      </div>
+
+          <a href="https://github.com/sakshisharma4488/Spam-SMS-Detector" target="_blank" title="View code at Github" ><h5  align="center"><b>GITHUB- Sakshi Sharma</h5></a>
+  
+         
+      </div>
+
+  </body>
+</html>
